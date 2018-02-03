@@ -1,0 +1,252 @@
+/* PAGE CONTENT */
+.welcome-text {
+  position: relative;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  
+  &.gray-bg { background: @light-gray-color; }
+
+  .css-table { height: 170px; }
+}
+
+.welcome-logo {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 170px;
+
+  img { margin-top: 43px; }
+}
+
+.welcome-content {
+  padding-left: 120px;
+
+  h5 { margin: 0 0 10px 0;
+
+    span {
+      font-size: @font-size-h3;
+      text-transform: none;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: #9faaad;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+.main-content { 
+  position: relative;
+  background: #fff;
+
+  .categories { padding: 10px 0 40px 0; }
+
+  .page-content { padding-top: @padding-xl-vertical; }
+
+  .custom-tabs { 
+    padding-top: @padding-xl-vertical; 
+    
+    .welcome-text {
+      padding: 0; 
+      border: none;
+    }
+  }
+
+  .custom-tabs .form-row { margin-bottom: 20px; }
+
+  #slider { position: relative; }
+
+  .companies-sliders {
+    position: relative;
+    padding: @padding-xl-vertical 0;
+    background: @light-gray-color;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+
+    .companies-slider-title { margin: 0 0 40px 0; }
+
+    .owl-pagination {
+      position: absolute;
+      top: -60px;
+      right: 0;
+
+      .owl-page {
+        margin-left: 10px;
+        float: left;
+
+        span {
+          display: inline-block;
+          width: 18px;
+          height: 23px;
+          text-align: center;
+          font-weight: 700;
+          .transition(all .2s ease-in-out);
+
+          &:hover { color: @secondary-first-pallet-color; }
+        }
+      }
+
+      .active {
+        color: @primary-first-pallet-color;
+        border-bottom: 3px solid @primary-first-pallet-color;
+
+        &:hover span { color: @primary-first-pallet-color; }
+      }
+    }
+  }
+
+  .companies-slider { position: relative;
+
+    &.featured { margin-bottom: 40px; }
+
+    &.featured .owl-pagination { right: 15px; }
+
+    .company-box { 
+      position: relative;
+      width: auto;
+
+      .company-rating {
+        position: absolute;
+        padding: @padding-base-vertical @padding-small-horizontal;
+        top:0;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+
+        ul > li {
+          margin: 0 2px;
+          float: left;
+
+          i { 
+            color: @primary-first-pallet-color; 
+            font-size: 18px;
+          }
+        }
+      }
+
+      .company-title { margin: 0 0 5px 0; 
+        
+        &:hover a { color: @secondary-first-pallet-color; }
+      }
+
+      .company-tags li { float: left; 
+
+        a { font-weight: 700; 
+
+          &:hover { color: @secondary-first-pallet-color; }
+        }
+      }
+      
+      .white-bottom {
+        padding: 10px;
+        background: #fff;
+      }
+    }
+
+    .company-slide {
+      position: relative;
+      height: 220px;
+      background: #fff;
+
+      .company-logo {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+
+        img { 
+          width: 220px;
+          height: 220px;
+          .transition(all .2s ease-in-out);
+
+          &:hover { opacity: .6; }
+        }
+      }
+
+      .company-content { padding: @padding-large-vertical @padding-xl-horizontal 0 250px;
+
+        .company-title { 
+          margin: 0;
+          font-weight: 400;  
+
+          &:hover a { color: @secondary-first-pallet-color; }
+        }
+
+        .company-tags li { float: left; 
+
+          a { font-weight: 700; 
+
+            &:hover { color: @secondary-first-pallet-color; }
+          }
+        }
+
+        .company-rating i {
+          margin-top: 5px;
+          font-size: 16px;
+        }
+
+        .company-describe { 
+          margin-top: 20px; 
+          height: 42px;
+          overflow: hidden;
+          
+          &.with-rating { margin-top: 0px; }
+        }
+      }
+    }
+  }
+
+  .partners {
+    position: relative;
+    padding: @padding-large-vertical 0;
+    border-top: 1px solid #eaeaea;
+    background: @light-gray-color; 
+
+    .partners-title { margin: 0 0 30px 0; }
+
+    .owl-theme .owl-controls {
+      position: absolute;
+      top: -49px;
+      right: 0;
+    }
+
+    .owl-theme .owl-controls .owl-page {
+      margin-left: 5px;
+      display: inline-block;
+      zoom: 1;
+
+      &.active span { 
+        background: @primary-first-pallet-color; 
+        border: 1px solid @primary-first-pallet-color;
+      }
+    }
+
+    .owl-theme .owl-controls .owl-page span {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: transparent;
+      border: 1px solid darken(@light-gray-color, 10%);
+      .transition(all .2s ease-in-out);
+
+      &:hover { border: 1px solid @primary-first-pallet-color; }
+    }
+  }
+}
+
+@media (max-width: @screen-desktop) {
+  
+  .main-content .custom-tabs {  padding: 40px 0 30px 0; }
+}
+
+@media(max-width: @screen-xs-max){
+
+  .welcome-text .welcome-logo { display: none; }
+
+  .welcome-text .welcome-content { padding-left: 0; }
+
+  .main-content .companies-slider .company-slide .company-logo { display: none; }
+
+  .main-content .companies-slider .company-slide .company-content { padding-left: 30px; }
+}

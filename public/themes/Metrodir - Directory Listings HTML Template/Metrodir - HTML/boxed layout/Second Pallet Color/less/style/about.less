@@ -1,0 +1,46 @@
+/* ABOUT US */
+.team {
+	position: relative;
+	padding: 0 0 @padding-xl-vertical 0;
+
+	.person { 
+		margin-bottom: 40px;
+		text-align: center;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			.transition(all .2s ease-in-out);
+
+			&:hover { opacity: .6; }
+		}
+
+		.caption { 
+			position: relative;
+			padding: @padding-small-vertical*2 @padding-small-horizontal*2;
+			background: @light-gray-color;
+			overflow: hidden;
+
+			.name { 
+				margin: 0;
+				font-weight: 400; 
+			}
+
+			.position { 
+				margin-top: 5px; 
+				font-weight: 400;
+				font-size: 14px;
+			}
+
+			.social { display: inline-block;
+
+				li {
+					float: left;
+					margin: 0 2.5px;
+
+					i { margin-right: 0; }
+				}
+			}
+		}
+	}
+}

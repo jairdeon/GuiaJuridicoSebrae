@@ -1,0 +1,114 @@
+/* FORMS */
+.default-form input { height: 39px; }
+
+.default-form input[type=text],
+.default-form input[type=password],
+.default-form input[type=date],
+.default-form select,
+.default-form textarea {
+  padding: @padding-base-vertical 15px;
+  width: 100%;
+  border: 1px solid @input-border;
+  .transition(all .3s ease-in-out);
+}
+
+.default-form input[type=text]:focus,
+.default-form input[type=password]:focus,
+.default-form input[type=date]:focus,
+.default-form select:focus,
+.default-form textarea:focus {
+  outline: none;
+  .transition(all .3s ease-in-out);
+}
+
+.default-form .radio-input input[type="radio"] { display: none; }
+
+.default-form .radio-input label { cursor: pointer; }
+
+.default-form .radio-input label:before {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  line-height: 0;
+  font-size: 0;
+  background: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px #e3e6e7;
+  content: "";
+}
+
+.default-form .select-box {
+
+  select { display: none; }
+
+  .advanced-select-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+    background-color: @primary-first-pallet-color;
+    .transition(all .3s ease-in-out);
+
+    &:hover,
+    &.active { background: @gray-base; }
+
+    i { color: #fff; }
+  }
+}
+
+.default-form .select-clone {
+  position: absolute;
+  display: none;
+  width: 100%;
+  max-height: 410px;
+  overflow-y: auto;
+  z-index: 999;
+  cursor: pointer;
+
+  li { 
+    padding: @padding-base-vertical @padding-base-horizontal;
+    margin: 0 0 2px 0;
+    display: block;
+    color: #fff;
+    background: @primary-first-pallet-color;
+    cursor: pointer;
+    .transition(all .3s ease-in-out);
+
+    &:hover { background: @gray-base; }
+  }
+}
+
+.default-form .ui-slider-horizontal {
+  position: relative;
+  height: 12px;
+  background: @dark-gray-color;
+
+  .ui-slider-range {
+    position: relative;
+    height: 12px;
+    background: @secondary-second-pallet-color;
+  }
+
+  .ui-slider-handle {
+    position: absolute;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    background: #fff;
+
+    &:hover { background: @secondary-second-pallet-color; }
+  }
+}
+
+
+
+

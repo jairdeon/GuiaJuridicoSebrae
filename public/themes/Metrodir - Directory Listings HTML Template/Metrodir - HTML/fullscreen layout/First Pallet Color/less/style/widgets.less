@@ -1,0 +1,76 @@
+/* WIDGETS */
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  display: none;
+  color: #fff;
+	text-align: center;
+  background: @primary-first-pallet-color;
+
+  i {
+    margin: 0;
+    display: block;
+  	font-size: 2em;
+  	line-height: 60px;
+  	.transition(all .2s ease-in-out);
+
+  	&:hover { font-size: 3em; }
+  }
+}
+
+#twitter-feed iframe {
+  width: 100% !important;
+  height: 174px !important;
+}
+
+#flickr-feed { display: inline-block;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 1px;
+      float: left;
+      width: 87px;
+      height: 87px;
+
+      img {
+        width: 87px;
+        height: 85px;
+      }
+    } 
+  }
+}
+
+@media(max-width: @screen-lg-desktop) {
+  #twitter-feed iframe { height: 140px !important; }
+
+  #flickr-feed ul li {
+    width: 70px;
+    height: 70px;
+    
+    img { 
+      width: 69px;
+      height: 68px;
+    }
+  }
+}
+
+@media(max-width: @screen-desktop) {
+  #twitter-feed iframe { height:  146px !important; }
+
+  #flickr-feed ul li {
+    width: 73px;
+    height: 73px;
+    
+    img { 
+      width: 72px;
+      height: 71px;
+    }
+  }
+} 

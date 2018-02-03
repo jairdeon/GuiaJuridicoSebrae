@@ -1,0 +1,39 @@
+/*SAMPLE PAGE SHORTCODE*/
+#sample-page { position: relative;
+
+  .main-photo { margin-top: 40px;
+		
+		&:hover img {
+	  	opacity: .6;
+			.transition(all .2s ease-in-out);
+	  }
+
+    img {
+      width: 100%;
+      height: 100%;
+      .transition(all .2s ease-in-out);
+    }
+  }
+
+  .page-content {
+
+  	blockquote {
+	  	position: relative;
+	  	padding: @padding-xl-vertical;
+	  	margin: 0 0 20px 0;
+	  	background: @light-gray-color;
+
+	  	&:before {
+	  		position: absolute;
+	  		top: 10px;
+	  		left: 10px;
+	  		font-size: 2em;
+	  		color: #fff;
+	  		font-family: fontAwesome;
+	  		content: "\f10d";
+	  	}
+  	}
+
+		p { margin-bottom: 20px; }
+	}
+}

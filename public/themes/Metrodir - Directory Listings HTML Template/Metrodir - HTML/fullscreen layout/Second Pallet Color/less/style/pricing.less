@@ -1,0 +1,123 @@
+/* PRICING PLANS */
+.subscribe {
+  position: relative;
+  padding: @padding-xl-vertical 0 @padding-small-horizontal 0 ;
+
+  .pricing-title,
+  .register-title { 
+    margin: 0 0 40px 0; 
+    clear: both;
+  }
+
+  .pricing-plan { 
+    margin-bottom: 40px; 
+    text-align: center;
+    .transition(all .2s ease-in-out);
+
+    &:hover { opacity: .6; }
+    
+    .pricing-label {
+      padding: @padding-middle-vertical @padding-base-horizontal;
+      margin: 0;
+      color: #fff;
+
+      &.start { background: @primary-first-pallet-color; }
+
+      &.silver { background: @silver-color; }
+
+      &.gold { background: @gold-color; }
+
+      &.premium { background: @gray-base; }
+    }
+
+    .pricing-value {
+      padding: @padding-xs-vertical @padding-base-horizontal;
+      margin-bottom: 2px;
+      background: @yellow-color;
+
+      span {
+        color: #fff;
+        font-weight: 300;
+
+        &.pricing-unit {
+          font-size: 30px;
+          font-weight: 700;
+          vertical-align: middle;
+        }
+
+        &.pricing-cost {
+          font-size: 60px;
+          vertical-align: middle;
+        }
+
+        &.pricing-cost-upper {
+          font-size: 34px;
+          line-height: 70px;
+          vertical-align: top;
+        }
+      }
+    }
+
+    .pricing-include li {
+      padding: @padding-middle-vertical @padding-base-horizontal;
+      margin: 0 0 2px 0;
+      display: block;
+      font-weight: 700;
+      background: @light-gray-color;
+    }
+  }
+
+  .register-step { margin-bottom: 30px; }
+
+  .register-step-title {
+    padding: @padding-middle-vertical @padding-base-horizontal;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    background: @primary-first-pallet-color;
+  }
+
+  .register-step-inner {
+    padding: @padding-xl-vertical @padding-xl-horizontal;
+    height: 320px;
+    text-align: center;
+    background: @light-gray-color;
+
+    &.subscribe-final { height: auto; }
+
+    h5 { margin: 0 0 20px 0; }
+
+    input { margin-bottom: 5px; }
+
+    .btn { 
+      padding: @padding-middle-vertical @padding-xl-horizontal*2.4; 
+      margin: 0;
+    }
+
+    .radio-input {
+      margin: 0 auto 20px auto;
+      display: block;
+      width: 160px;
+      text-align: left;
+
+      &.active label:before {
+        background: @primary-first-pallet-color;
+        box-shadow: 0 0 0 3px @primary-first-pallet-color;
+      }
+
+      label:hover:before {
+        background: @primary-first-pallet-color;
+        box-shadow: 0 0 0 3px @primary-first-pallet-color;
+        border: none;
+      }
+
+      &.active label:hover:before { border: 2px solid #fff; }
+    }
+  }
+
+  .register-step.subscribe-final { clear: both;
+    
+    .register-step-inner { height: auto; }
+  }
+}

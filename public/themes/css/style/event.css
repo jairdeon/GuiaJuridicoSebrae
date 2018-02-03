@@ -1,0 +1,15 @@
+/*EVENT*/
+#events {
+  position: relative;
+}
+#events .event-list-image img {
+  width: 100%;
+  height: 100%;
+}
+#events .event-list-header {
+  position: relative;
+  margin-top: 4px;
+}
+#events .event-list-header .title {
+  margin: 0;
+}

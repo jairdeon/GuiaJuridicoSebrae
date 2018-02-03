@@ -1,0 +1,92 @@
+.btn.btn-default:hover {
+	background: #523F6D;
+	border-color: #523F6D;
+}
+
+.btn.btn-secondary,
+#header .utility-user li#login form .login-form-container .submit-btn:hover {
+	background: #A3B745;
+	border-color: #A3B745;
+}
+
+#header .menu-nav .nav .menu-square.about {
+	background: #32BEEB;
+}
+
+#header .menu-nav .nav .menu-square.listing,
+#header .menu-nav .nav .menu-square.pricing,
+#header .search-nav .advanced-search-button,
+.map-wrapper .map-search .select-button .advanced-search-button,
+.default-form .select-box .advanced-select-button,
+.default-form .select-clone li,
+.subscribe .register-step-title,
+#header .search-nav .sub-menu li a,
+.marker-ribbon .ribbon-text:before, .marker-ribbon .ribbon-text:after,
+.subscribe .register-step-inner .radio-input label:hover:before,
+.main-content .partners .owl-theme .owl-controls .owl-page.active span,
+#footer,
+#back-to-top,
+#header .menu-nav .sub-menu li a,
+.nav-tabs li.active > a, .nav-tabs li.active:hover a,
+.nav-tabs li a:hover,
+#company .company-list-header .pagination li a:hover, #company .company-list-footer .pagination li a:hover, #company .company-list-header .pagination li a.active, #company .company-list-footer .pagination li a.active  {
+	background: #523F6D;
+}
+
+.overlay .overlay-shadow {
+	background: rgba(82, 63, 109, 0.9);
+}
+
+.main-content .companies-slider .company-box .company-rating ul > li i, 
+.main-content .companies-sliders .owl-pagination .active,
+#company .company-page-info .company-ratings .user-values .value ul li i,
+#company .company-page-info .company-ratings .user-values .value h6,
+.page-heading .breadcrumbs li:before,
+#contact .page-content .address-details li i,
+#contact .page-content .address-details li a:hover,
+#company .company-page-info .company-ratings .single-rate.hover i, #company .company-page-info .company-ratings .single-rate.hover h6 {
+	color: #523F6D;
+}
+
+.main-content .companies-sliders .owl-pagination .active,
+.main-content .companies-sliders .owl-pagination .active:hover,
+.main-content .partners .owl-theme .owl-controls .owl-page.active span,
+.main-content .partners .owl-theme .owl-controls .owl-page span:hover,
+.nav-tabs,
+#company .company-page-info .company-ratings .single-rate.hover .box-details,
+#company .company-list-header .pagination li a:hover, #company .company-list-footer .pagination li a:hover, #company .company-list-header .pagination li a.active, #company .company-list-footer .pagination li a.active {
+	border-color: #523F6D;
+}
+
+.main-content .companies-sliders .owl-pagination .owl-page span:hover,
+.overlay .overlay-content .btn:hover,
+.main-content .companies-slider .company-box .company-tags li a:hover,
+.main-content .companies-slider .company-slide .company-content .company-title:hover a,
+.main-content .companies-slider .company-slide .company-content .company-tags li a:hover,
+.btn.btn-secondary:hover,
+#company .company-list-single .company-content .company-title:hover a,
+#company .company-list-single .company-content .company-tags li a:hover,
+#company .company-list-single .company-content .read_more:hover,
+#company .company-page-info .company-preamble-content .company-title:hover a,
+#company .company-page-info .company-preamble-content .company-tags li a:hover,
+.page-heading .breadcrumbs li a:hover,
+.sidebar-content .categories-links li a:hover,
+#blog .blog-list-post .blog-list-header .title:hover a,
+#blog .blog-list-post .blog-list-header .comment:hover a,
+#contact .page-content .address-details li:hover i,
+#contact .page-content .address-details li a,
+.marker-holder .map-item-info .title:hover a,
+.sidebar-content .recent-posts li a:hover, .sidebar-content .recent-comments li a:hover, .sidebar-content .archives li a:hover, .sidebar-content .meta li a:hover,
+#blog .blog-list-post .blog-list-meta .email a:hover, #blog .blog-list-post .blog-list-meta .date a:hover,
+.sidebar-content .featured .single-post .post-content .read_more:hover, .sidebar-content .recently .single-post .post-content .read_more:hover, .sidebar-content .latest .single-post .post-content .read_more:hover,
+.sidebar-content .featured .single-post .post-content .post-title:hover a, .sidebar-content .recently .single-post .post-content .post-title:hover a, .sidebar-content .latest .single-post .post-content .post-title:hover a {
+	color: #A3B745;
+}
+
+.subscribe .register-step-inner .radio-input label:hover:before {
+	box-shadow: 0px 0px 0px 3px #523F6D;
+}
+
+.marker-ribbon .ribbon-banner:after, .marker-ribbon .ribbon-banner:before {
+	background-color: #331E50;
+}

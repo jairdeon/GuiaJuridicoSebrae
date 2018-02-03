@@ -1,0 +1,83 @@
+/* BUTTONS */
+
+// Base styles
+// --------------------------------------------------
+button {
+	margin: 0;
+	background-color: transparent;
+	border: none;
+}
+
+button:focus { outline: none; }
+
+.btn {
+  padding: 8px 16px;
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: @btn-font-weight;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  i { margin-right: 5px; }
+
+  &.btn-default {
+    color: @btn-default-color;
+    background: @btn-default-bg;
+    border: 1px solid @btn-default-border;
+
+    &:hover {
+      color: #fff;
+      background: @primary-first-pallet-color;
+      border-color: @primary-first-pallet-color;
+    }
+  }
+
+  &.btn-primary {
+    color: #fff;
+    background: @primary-first-pallet-color;
+    border: 1px solid @primary-first-pallet-color;
+
+    &:hover {
+      color: #fff;
+      background: @gray-base;
+    }
+  }
+
+  &.btn-secondary {
+    color: #fff;
+    background: @secondary-first-pallet-color;
+    border: 1px solid @secondary-first-pallet-color;
+
+    &:hover {
+      color: @secondary-first-pallet-color;
+      background: @btn-default-bg;
+    }
+  }
+
+  &.btn-gray {
+    color: #fff;
+    background: @gray-base;
+    border: 1px solid @gray-base;
+
+    &:hover {
+      color: inherit;
+      background: @btn-default-bg;
+    }
+  }
+
+  &.btn-light-gray {
+    color: @btn-default-color;
+    background: @light-gray-color;
+    border: 1px solid @light-gray-color;
+
+    &:hover { background: @btn-default-bg; }
+  }
+
+  &.full-width {
+    display: inline-block;
+    width: 100%;
+  }
+}
+

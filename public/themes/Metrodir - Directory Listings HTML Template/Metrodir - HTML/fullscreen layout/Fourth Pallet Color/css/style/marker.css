@@ -1,0 +1,104 @@
+/* MARKER */
+.marker-ribbon {
+  background: red;
+}
+.marker-ribbon {
+  position: absolute;
+  top: 13px;
+  left: -27px;
+  z-index: 999999;
+}
+.marker-ribbon .ribbon-text,
+.marker-ribbon .ribbon-banner,
+.marker-ribbon a {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.marker-ribbon .ribbon-banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100px;
+  display: block;
+  float: right;
+  color: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.marker-ribbon .ribbon-banner:after,
+.marker-ribbon .ribbon-banner:before {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  display: block;
+  background-color: #0C4C73;
+  content: '';
+}
+.marker-ribbon .ribbon-banner:before {
+  left: -45px;
+  -webkit-transform-origin: 100% center;
+  -moz-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  -o-transform-origin: 100% center;
+  -webkit-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -moz-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -ms-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -o-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+}
+.marker-ribbon .ribbon-banner:after {
+  right: -17px;
+  top: 30px;
+  -webkit-transform-origin: 0 center;
+  -moz-transform-origin: 0 center;
+  -ms-transform-origin: 0 center;
+  -o-transform-origin: 0 center;
+  -webkit-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -moz-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -ms-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+  -o-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+}
+.marker-ribbon .ribbon-text {
+  position: relative;
+  padding: 6px 0;
+  min-height: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+.marker-ribbon .ribbon-text:before,
+.marker-ribbon .ribbon-text:after {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #1470a6;
+  z-index: -1;
+  content: "";
+}
+.marker-ribbon .ribbon-text:before {
+  -webkit-transform: translateX(-15%) skewX(-45deg);
+  -moz-transform: translateX(-15%) skewX(-45deg);
+  -ms-transform: translateX(-15%) skewX(-45deg);
+  -o-transform: translateX(-15%) skewX(-45deg);
+}
+.marker-ribbon .ribbon-text:after {
+  -webkit-transform: translateX(15%) skewX(45deg);
+  -moz-transform: translateX(15%) skewX(45deg);
+  -ms-transform: translateX(15%) skewX(45deg);
+  -o-transform: translateX(15%) skewX(45deg);
+}

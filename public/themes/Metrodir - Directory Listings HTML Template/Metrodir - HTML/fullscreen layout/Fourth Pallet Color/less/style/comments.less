@@ -1,0 +1,53 @@
+/*COMMENTS*/
+.single-post-comments,
+.company-page-comments { position: relative;
+
+	h5.title { margin: 40px 0; }
+
+	.comment {
+	  position: relative;
+	  padding-left: 100px;
+	  margin-bottom: 20px;
+	  min-height: 80px;
+	  display: block;
+	}
+
+	.avatar {
+	  position: absolute;
+	  width: 80px;
+	  height: 80px;
+	  top: 0;
+	  left: 0;
+	} 
+
+	.post-comment-meta {
+		font-weight: 700;
+		text-transform: uppercase;
+
+		a:hover { color: @secondary-first-pallet-color; }
+	}
+
+	.post-comment-content {
+		position: relative;
+		margin-top: 20px;
+
+		p { margin: 0; }
+	}
+
+	ul { margin-top: 30px; }
+}
+
+@media(max-width: @screen-desktop) {
+
+	.single-post-comments .comment { 
+		padding-left: 80px; 
+		min-height: 60px;
+	}
+
+	.single-post-comments .post-comment-content { position: relative; }
+
+	.single-post-comments .avatar {
+		width: 60px;
+		height: 60px; 
+	}
+}

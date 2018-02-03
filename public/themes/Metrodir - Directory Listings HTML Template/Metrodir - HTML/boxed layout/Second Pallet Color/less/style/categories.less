@@ -1,0 +1,176 @@
+/*CATEGORIES*/
+.category-box { margin-top: 30px;
+
+  .category-header {
+    position: relative;
+    margin-bottom: 2px;
+    height: 60px;
+
+    .category-icon {
+      position: absolute;
+      margin-right: 2px;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+
+      &:after { 
+        position: absolute;
+        right: 0;
+        height: 60px;
+        content: "";
+        border: 1px solid #fff;
+      }
+
+      i {
+        margin: 0;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 2em;
+        .transition(all .2s ease-in-out);
+      }
+    }
+
+    .category-title {
+      padding: 20px 15px 20px 75px;
+      width: 100%;
+      height: 60px;
+
+      h5 {
+        margin: 0;
+        float: left;
+        color: #fff;
+        font-weight: 400;
+      }
+
+      strong {
+        float: right;
+        color: #fff;
+      }
+    }
+    
+    &:hover .category-icon i { font-size: 3em; }
+
+    &:hover .category-title { 
+      background: @gray-base; 
+      .transition(all .2s ease-in-out);
+    }
+  }
+
+  .category-list li {
+    margin: 0 0 2px 0;
+    display: block;
+
+    a {
+      padding: @padding-base-vertical @padding-base-horizontal;
+      display: block;
+      background: @light-gray-color;
+
+      &:hover { 
+        color: #fff;
+        background: @gray-base; 
+      }
+    }
+  }
+
+  .advertising .category-icon,
+  .advertising .category-title,
+  .advertising.category-icon-square { background: @secondary-second-pallet-color; }
+
+  .airport .category-icon,
+  .airport .category-title,
+  .airport.category-icon-square,
+  .industry .category-icon,
+  .industry .category-title,
+  .industry.category-icon-square,
+  .offices .category-icon,
+  .offices .category-title,
+  .offices.category-icon-square,
+  .sport .category-icon,
+  .sport .category-title,
+  .sport.category-icon-square { background: @orange-color; }
+
+  .cars .category-icon,
+  .cars .category-title,
+  .cars.category-icon-square,
+  .postal .category-icon,
+  .postal .category-title,
+  .postal.category-icon-square { background: @magenta-color; }
+
+  .education .category-icon,
+  .education .category-title,
+  .education.category-icon-square { background: @green-dark-color; }
+
+  .entertainment .category-icon,
+  .entertainment .category-title,
+  .entertainment.category-icon-square,
+  .restaurant .category-icon,
+  .restaurant .category-title,
+  .restaurant.category-icon-square { background: @primary-first-pallet-color; }
+
+  .garden .category-icon,
+  .garden .category-title,
+  .garden.category-icon-square { background: @green-light-color; }
+
+  .libraries .category-icon,
+  .libraries .category-title,
+  .libraries.category-icon-square { background: @secondary-first-pallet-color; }
+
+  .mechanic .category-icon,
+  .mechanic .category-title,
+  .mechanic.category-icon-square { background: @navy-blue-color; }
+
+  .realestate .category-icon,
+  .realestate .category-title,
+  .realestate.category-icon-square { background: @red-dark-color; }
+
+  .shop .category-icon,
+  .shop .category-title,
+  .shop.category-icon-square { background: @yellow-color; }
+
+  .category-icon-square { 
+    position: relative;
+
+    &:before {
+      padding: 50%;
+      display: block;
+      content: "";
+    }
+
+    &:hover { 
+      background: @gray-base; 
+      .transition(all .2s ease-in-out);
+
+      & i { font-size: 7em; }
+    }
+    
+    .fa { 
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2em;
+      color: #fff;
+      .transition(all .2s ease-in-out);
+    }
+
+    .category-name {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+
+@media(max-width: 960px) { 
+  .category-box .category-icon-square:hover i { font-size: 5em; }
+}
+
+@media(max-width: 480px) {
+  .categories.block .category-box { width: 50%; }
+}
+
+@media(max-width: 320px) {
+  .categories.block .category-box { width: 100%; }
+} 

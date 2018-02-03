@@ -1,0 +1,142 @@
+/* RIBBON BANNERS */
+
+.ribbon {
+	position: absolute;
+	top: 13px;
+	left: -27px;
+	z-index: 999999;
+}
+
+/* reset certain elements (in case of conflicting CSS for classes, links, etc.) */
+.ribbon .text,
+.ribbon .banner,
+.ribbon a {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+.ribbon .banner {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	float: right;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100px;
+}
+
+.ribbon .banner::after,
+.ribbon .banner::before {
+	content: '';
+	display: block;
+	height: 12px;
+	position: absolute;
+	width: 30px;
+}
+
+
+.ribbon .banner::before {
+	-webkit-transform: skewY(-45deg) translate(50%,15px);
+	-moz-transform: skewY(-45deg) translate(50%,15px);
+	-ms-transform: skewY(-45deg) translate(50%,15px);
+	-o-transform: skewY(-45deg) translate(50%,15px);
+	-webkit-transform-origin: 100% center;
+	-moz-transform-origin: 100% center;
+	-ms-transform-origin: 100% center;
+	-o-transform-origin: 100% center;
+	left: -45px;
+}
+
+
+.ribbon .banner::after {
+	-webkit-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
+	-moz-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
+	-ms-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
+	-o-transform: translate(100%,-100%) skewY(45deg) translateX(-58%);
+	-webkit-transform-origin: 0 center;
+	-moz-transform-origin: 0 center;
+	-ms-transform-origin: 0 center;
+	-o-transform-origin: 0 center;
+	right: -17px;
+	top: 30px;
+}
+
+
+.ribbon .text {
+	position: relative;
+	z-index: 2;
+	padding: 6px 0;
+	font-size: 12px;
+	font-weight: bold;
+	min-height: 18px;
+	line-height: 18px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* small text */
+
+
+
+.ribbon .text::before,
+.ribbon .text::after {
+	content: '';
+	display: block;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+
+.ribbon .text::before {
+	-webkit-transform: translateX(-15%) skewX(-45deg);
+	-moz-transform: translateX(-15%) skewX(-45deg);
+	-ms-transform: translateX(-15%) skewX(-45deg);
+	-o-transform: translateX(-15%) skewX(-45deg);
+}
+
+.ribbon .text::after {
+	-webkit-transform: translateX(15%) skewX(45deg);
+	-moz-transform: translateX(15%) skewX(45deg);
+	-ms-transform: translateX(15%) skewX(45deg);
+	-o-transform: translateX(15%) skewX(45deg);
+}
+
+
+
+
+
+/* red */
+.ribbon-red .banner::after,
+.ribbon-red .banner::before {
+	background-color: #0C4C73;
+}
+.ribbon-red .text::before,
+.ribbon-red .text::after,
+.no-css-transforms .ribbon-red .text {
+	background-color: #1470a6;
+}
+
+
+
+.text { 
+	text-align: center; 
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'lato';
+}

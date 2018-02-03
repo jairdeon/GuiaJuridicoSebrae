@@ -1,0 +1,40 @@
+/* PAGE HEADING */
+.page-heading {
+	position: relative;
+	padding: @padding-xl-vertical 0;
+	background: url(../img/page-heading-bg.png) no-repeat center #fff;
+	background-size: cover;
+
+	h5 {
+		margin: 0;
+		float: left;
+	}
+
+	.breadcrumbs { float: right;
+
+		li { float: left;
+			
+			&:before {
+				padding: 0 @padding-base-horizontal;
+				font-family: fontAwesome;
+				color: @primary-first-pallet-color;
+				content: "\f054";
+			}
+
+			&:first-child:before { display: none; }
+
+			a:hover { color: @secondary-first-pallet-color; }
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+	.page-heading h5 { float: none; }
+
+	.page-heading .breadcrumbs {
+
+		margin-top: 20px;
+		float: left;
+	}
+}
